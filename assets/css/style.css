@@ -1,0 +1,122 @@
+* {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+footer p,
+.message,
+.message2 {
+  font-family: 'Bangers', cursive;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h3 {
+  font-size: 200%;
+}
+
+h4 {
+  font-size: 150%;
+}
+
+header,
+footer p {
+  color: #f65275;
+  text-shadow: -1px 0 indigo, 0 1px indigo, 1px 0 indigo, 0 -1px indigo;
+}
+
+header {
+  border-bottom: 1px solid indigo;
+}
+
+footer p {
+  height: 60px;
+  width: 100%;
+  overflow:hidden;
+  border-top: 1px solid indigo;
+  padding-top: 15px;
+}
+
+body {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.section-title {
+  color: indigo;
+}
+
+.gem {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+}
+
+.gem:hover {
+  width: 75px;
+  height: 75px;
+}
+
+.activity {
+  padding: 2%;
+}
+
+.wrapper {
+  padding-left: 15%; 
+  padding-right: 15%;
+}
+
+.gem-holder {
+  background-color: #f3f3f3;
+  margin-right: 25%;
+  margin-left: 25%;
+  border: 4px solid indigo;
+
+}
+
+.random-number {
+  background-color: #f3f3f3;
+  margin-right: 25%;
+  margin-left: 25%;
+  border: 4px solid indigo;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  height: 75px;
+
+}
+
+.guess-sum {
+  background-color: #f3f3f3;
+  margin-right: 25%;
+  margin-left: 25%;
+  border: 4px solid indigo;
+  height: 75px;
+
+}
+
+.gem-holder:active {
+  border: 5px solid darkcyan;
+
+}
+
+.section-title,
+.message,
+.message2,
+button {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.message,
+.message2 {
+  color: indigo;
+  padding: 1%;
+  font-size: 100%;
+}
+

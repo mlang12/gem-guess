@@ -1,0 +1,69 @@
+<!doctype html>
+<HTML lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gem Guess</title>
+
+    <!-- Style sheets -->
+    <!-- Reset -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <!-- Custom Style -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  </head>
+  <body class="wrapper">
+    <header>
+      <h1>
+        Tropical Gem Guess
+      </h1>
+      <h4>
+        Can you figure it out?
+      </h4>
+    </header>
+
+    <div class="container"> <!-- Open Main Container -->
+
+      <div class="activity"> <!-- Open Random Number Section --> 
+        <h4 class="section-title">
+          Get to the Number Below
+        </h4>
+        <div class="random-number">
+        </div>
+
+        <div class="guess-sum">
+        </div>
+      </div> <!-- Close Random Number Section -->
+
+
+      <div class="activity"> <!-- Open Gem Section -->
+        <div class="gem-holder">
+          <img src="./assets/img/red.png" class="red gem">
+          <img src="./assets/img/yellow.png" class="yellow gem">
+          <img src="./assets/img/green.png" class="green gem">
+          <img src="./assets/img/blue.png" class="blue gem">
+        </div>
+        <div>
+          <p class="message"></p>
+          <p class="message2"></p>
+        </div>
+      </div> <!-- Close Gem Section -->
+
+    </div><!-- Close Main Container -->
+
+    <footer>
+      <p> 
+        M A Lang 2017
+      </p>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- Game JS File -->
+    <script type="text/javascript" src = "./assets/js/game.js"></script>
+  </body>
+</HTML>
