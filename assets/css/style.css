@@ -3,22 +3,17 @@
 }
 
 h1,
-h2,
-h3,
 h4,
-button,
 footer p,
-.message,
-.message2 {
+.win,
+.loss,
+.guess-sum,
+.random-number {
   font-family: 'Bangers', cursive;
 }
 
 h1 {
   font-size: 300%;
-}
-
-h3 {
-  font-size: 200%;
 }
 
 h4 {
@@ -28,7 +23,7 @@ h4 {
 header,
 footer p {
   color: #f65275;
-  text-shadow: -1px 0 indigo, 0 1px indigo, 1px 0 indigo, 0 -1px indigo;
+  text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold;
 }
 
 header {
@@ -47,6 +42,7 @@ body {
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .section-title {
@@ -54,14 +50,15 @@ body {
 }
 
 .gem {
-  width: 70px;
-  height: 70px;
-  padding: 5px;
+  max-width: 70px;
+  max-height: 70px;
+  padding: 10px;
 }
 
 .gem:hover {
-  width: 75px;
-  height: 75px;
+  width: 85px;
+  height: 85px;
+  padding: 2px;
 }
 
 .activity {
@@ -78,9 +75,23 @@ body {
   margin-right: 25%;
   margin-left: 25%;
   border: 4px solid indigo;
-
+  height: 100px;
 }
 
+.gem-holder:active {
+  border: 8px solid gold;
+}
+
+.random-number,
+.guess-sum {
+  padding-top: 2%;
+  font-size: 200%;
+  height: 65px;
+  text-shadow: -1px 0 darkcyan, 0 1px darkcyan, 1px 0 darkcyan, 0 -1px darkcyan;
+}
+
+.scoreboard,
+.guess-sum,
 .random-number {
   background-color: #f3f3f3;
   margin-right: 25%;
@@ -88,35 +99,13 @@ body {
   border: 4px solid indigo;
   margin-bottom: 15px;
   margin-top: 15px;
-  height: 75px;
-
 }
 
-.guess-sum {
-  background-color: #f3f3f3;
-  margin-right: 25%;
-  margin-left: 25%;
-  border: 4px solid indigo;
-  height: 75px;
-
-}
-
-.gem-holder:active {
-  border: 5px solid darkcyan;
-
-}
-
-.section-title,
-.message,
-.message2,
-button {
+.section-title {
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-.message,
-.message2 {
-  color: indigo;
-  padding: 1%;
-  font-size: 100%;
+.loss {
+  padding-left: 15px;
 }
 
