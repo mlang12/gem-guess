@@ -1,14 +1,16 @@
 $(document).ready(function(){
 
-  var red = $("#red");
+  var white = $("#white");
   var yellow = $("#yellow");
   var green = $("#green");
   var blue = $("#blue");
   var randomNum = $(".random-number");
   var guessSum = $(".guess-sum");
   var gem = $(".gem");
-  var win = $(".win")
-  var lose = $(".loss")
+  var win = $(".win");
+  var lose = $(".loss");
+  var currentClass = "";
+  var currentGem = "";
 
   var game = {
     runningSum: 0,
@@ -16,7 +18,7 @@ $(document).ready(function(){
     gemNums: [],
     
     gems: {
-      red: 0,
+      white: 0,
       yellow: 0,
       green: 0,
       blue: 0
@@ -86,9 +88,24 @@ $(document).ready(function(){
 
   //Listen for clicks on gems
   gem.click(function(gemClicked){
-    game.play($(this).attr("id"));
+    var id = $(this).attr("id");
+    var oldClass = currentClass;
+    var lastClick = currentGem;
+    game.play(id);
     game.checkWin();
     game.redraw();
+    currentClass = id + "-gem";
+
+    if(lastClick === ""){
+      $("#" + id).toggleClass(currentClass); 
+      currentGem = id;
+    } else {
+      $("#" + lastClick).toggleClass(oldClass);
+      $("#" + id).toggleClass(currentClass);
+      currentGem = id; 
+    }
+
+
   })
 })
 

@@ -1,10 +1,12 @@
 * {
   text-align: center;
+  box-sizing: border-box
 }
 
 h1,
 h4,
 footer p,
+#directions p,
 .win,
 .loss,
 .guess-sum,
@@ -50,15 +52,10 @@ body {
 }
 
 .gem {
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 20%;
+  height: auto;
   padding: 10px;
-}
-
-.gem:hover {
-  width: 85px;
-  height: 85px;
-  padding: 2px;
+  display: inline-block;
 }
 
 .activity {
@@ -66,20 +63,22 @@ body {
 }
 
 .wrapper {
-  padding-left: 15%; 
-  padding-right: 15%;
+  padding-left: 10%; 
+  padding-right: 10%;
 }
 
 .gem-holder {
-  background-color: #f3f3f3;
-  margin-right: 25%;
-  margin-left: 25%;
-  border: 4px solid indigo;
-  height: 100px;
+  /*background-color: #f3f3f3;*/
+  margin-right: 15%;
+  margin-left: 15%;
+  /*border: 4px solid indigo;*/
+  max-width: 100%
+  padding: 5%;
+  height: auto;
 }
 
 .gem-holder:active {
-  border: 8px solid gold;
+  
 }
 
 .random-number,
@@ -109,3 +108,61 @@ body {
   padding-left: 15px;
 }
 
+.white-gem {
+  background: crimson; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(rgba(243,243,243,.85), rgba(243,243,243,0) ); /* Safari 5.1-6.0 */
+  background: -o-radial-gradient(rgba(243,243,243,.85), rgba(243,243,243,0) ); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(rgba(243,243,243,.85), rgba(243,243,243,0) ); /* For Firefox 3.6-15 */
+  background: radial-gradient(rgba(243,243,243,.85), rgba(243,243,243,0) ); /* Standard syntax */
+}
+
+.yellow-gem {
+  background: sandybrown; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(rgba(252,194,71,.85), rgba(252,194,71,0) ); /* Safari 5.1-6.0 */
+  background: -o-radial-gradient(rgba(252,194,71,.85), rgba(252,194,71,0) ); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(rgba(252,194,71,.85), rgba(252,194,71,0) ); /* For Firefox 3.6-15 */
+  background: radial-gradient(rgba(252,194,71,.85), rgba(252,194,71,0) ); /* Standard syntax */
+}
+
+.green-gem {
+  background: greenyellow; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(rgba(193,231,59,.85), rgba(193,231,59,.0)); /* Safari 5.1-6.0 */
+  background: -o-radial-gradient(rgba(193,231,59,.85), rgba(193,231,59,.0) ); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(rgba(193,231,59,.85), rgba(193,231,59,.0) ); /* For Firefox 3.6-15 */
+  background: radial-gradient(rgba(193,231,59,.85), rgba(193,231,59,.0) ); /* Standard syntax */
+}
+
+.blue-gem {
+  background: turquoise; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(rgba(78,222,250,.85), rgba(78,222,250,0) ); /* Safari 5.1-6.0 */
+  background: -o-radial-gradient(rgba(78,222,250,.85), rgba(78,222,250,0) ); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(rgba(78,222,250,.85), rgba(78,222,250,0) ); /* For Firefox 3.6-15 */
+  background: radial-gradient(rgba(78,222,250,.85), rgba(78,222,250,0) ); /* Standard syntax */
+}
+
+@media only screen and (max-width: 960px) {
+  .gem {
+    max-width: 25%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .gem {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gem {
+    max-width: 45%;
+  }
+}
+
+#directions {
+  background-color: lightgray;
+  opacity: .8;
+}
+
+#dirTitle {
+  font-size: 150%;
+}
